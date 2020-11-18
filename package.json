@@ -1,13 +1,17 @@
 {
-  "name": "@ngnice/libra",
-  "version": "0.0.0",
+  "name": "@ngxnice/libra",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run build:libra && npm run build:schematics",
+    "build:libra": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "ngm": "ng g module button"
+    "ngm": "ng g module button",
+    "build:schematics": "node_modules/.bin/tsc -p tsconfig.schematics.json && npm run copy:schematics",
+    "copy:schematics": "cpx \"schematics/**/*.{json,template}\" ./dist/libra/schematics/",
+    "pub": "cd dist/libra && npm publish --access=public"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +34,7 @@
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
+    "cpx": "^1.5.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.1.0",

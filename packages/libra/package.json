@@ -1,11 +1,17 @@
 {
-  "name": "libra",
+  "name": "@ngxnice/libra",
   "version": "0.0.1",
+  "scripts": {
+  },
   "peerDependencies": {
     "@angular/common": "^11.0.0",
     "@angular/core": "^11.0.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"
+  },
+  "schematics": "./schematics/collection.json",
+  "ng-add": {
+    "save": "dependencies"
   }
 }
