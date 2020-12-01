@@ -1,9 +1,6 @@
-import { normalize } from '@angular-devkit/core';
 import { Tree } from '@angular-devkit/schematics';
 import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
-import { getWorkspace } from '@schematics/angular/utility/config';
 import { getFileContent } from '@schematics/angular/utility/test';
-import { join } from 'path';
 import { createTestApp } from '../testing/test-app';
 
 describe('ng-add schematic', () => {

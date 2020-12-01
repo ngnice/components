@@ -1,6 +1,6 @@
 {
   "name": "@ngnicest/libra",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {},
   "peerDependencies": {
     "@angular/common": "^11.0.0",
@@ -9,8 +9,5 @@
   "dependencies": {
     "tslib": "^2.0.0"
   },
-  "schematics": "./schematics/collection.json",
-  "ng-add": {
-    "save": "dependencies"
-  }
+  "schematics": "./schematics/collection.json"
 }
