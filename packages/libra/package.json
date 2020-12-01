@@ -1,8 +1,7 @@
 {
-  "name": "@ngxnice/libra",
+  "name": "@ngnicest/libra",
   "version": "0.0.2",
-  "scripts": {
-  },
+  "scripts": {},
   "peerDependencies": {
     "@angular/common": "^11.0.0",
     "@angular/core": "^11.0.0"
